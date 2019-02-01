@@ -3,7 +3,7 @@
 int main()
 {
    char str[1000], ch;
-   int i, frequency = 0;
+   int j, f = 0;
 
    printf("Enter a string: ");
    gets(str);
@@ -11,13 +11,13 @@ int main()
    printf("Enter a character to find the frequency: ");
    scanf("%c",&ch);
 
-   for(i = 0; str[i] != '\0'; ++i)
+   for(j = 0; str[j] != '\0'; ++j)
    {
        if(ch == str[i])
-           ++frequency;
+           ++f;
    }
 
-   printf("Frequency of %c = %d", ch, frequency);
+   printf("Frequency of %c = %d", ch, f);
 
    return 0;
 }
